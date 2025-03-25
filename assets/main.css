@@ -1087,6 +1087,19 @@ footer {
     margin-top: 54px;
 }
 
+.open_telegram {
+    color: #FFF;
+    font-family: 'Manrope';
+    font-size: 16.404px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    text-decoration: none;
+}
+
 @media (max-width:1200px) {
     .container {
         max-width: 769px;
@@ -1144,6 +1157,16 @@ footer {
 
     .section_title span::before {
         top: 12px;
+    }
+
+    .open_telegram {
+        font-size: 12px;
+        gap: 6px;
+    }
+
+    .open_telegram svg {
+        width: 10.5px;
+        height: 10.5px;
     }
 
     .header {
@@ -1781,6 +1804,11 @@ footer {
         top: auto;
         bottom: 163px;
         left: 0;
+    }
+
+    .open_telegram {
+        font-size: 3.125vw;
+        gap: 5px;
     }
 
     .me .books {
