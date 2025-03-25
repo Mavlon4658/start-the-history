@@ -75,6 +75,24 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    const faqaccordion = document.querySelectorAll('.faq-accordion');
+
+    if (faqaccordion.length) {
+        faqaccordion.forEach((item) => {
+            const accBtn = item.querySelector('.faq-accordion__btn');
+            const accBody = item.querySelector('.faq-accordion__body');
+
+            if (item.classList.contains('active')) {
+                accBody.style.maxHeight = accBody.scrollHeight + 'px';
+            }
+    
+            accBtn.addEventListener('click', () => {
+                item.classList.toggle('active');
+                accBody.style.maxHeight = accBody.style.maxHeight ? null : accBody.scrollHeight + 'px';
+            });
+        });
+    }
+
     // modal
     const openModalPro = document.getElementById('openModalPro');
     const closeModal = document.getElementById('closeModalPro');
@@ -89,10 +107,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const modalOverlayPremium = document.getElementById('modalOverlayPremium');
 
     function modal(openModal, closeModal, modalOverlay) {
-        openModal.addEventListener('click', (e) => {
-            e.preventDefault();
-            modalOverlay.classList.add('show');
-        });
+        if (openModal) {
+            openModal.addEventListener('click', (e) => {
+                e.preventDefault();
+                modalOverlay.classList.add('show');
+            });
+        }
 
         closeModal.addEventListener('click', () => {
             modalOverlay.classList.remove('show');
