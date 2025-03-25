@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="assets/libs/swiper.css">
+    <link rel="stylesheet" href="assets/libs/swiper.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/main.css?v=0.04">
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>STH-RES</title>
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        
+        <!-- Header -->
+        <header class="header">
+            <div class="container header-container">
+                <a href="#" class="header-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                        <path
+                            d="M7.08545 0.145996C10.9242 0.145996 14.0855 3.30729 14.0855 7.146C14.0855 11.0129 10.9242 14.146 7.08545 14.146C3.21851 14.146 0.0854492 11.0129 0.0854492 7.146C0.0854492 3.30729 3.21851 0.145996 7.08545 0.145996ZM10.3032 4.91616C10.3314 4.83148 10.3314 4.7468 10.3032 4.6339C10.3032 4.57745 10.2467 4.49277 10.2185 4.46454C10.1338 4.37987 9.99271 4.37987 9.93626 4.37987C9.68222 4.37987 9.25884 4.521 7.31126 5.33954C6.63384 5.6218 5.279 6.18632 3.24674 7.08954C2.90803 7.23067 2.73868 7.34358 2.71045 7.48471C2.68222 7.71051 3.04916 7.79519 3.47255 7.93632C3.83948 8.04922 4.31932 8.19035 4.57335 8.19035C4.79916 8.19035 5.05319 8.10567 5.33545 7.90809C7.22658 6.60971 8.21448 5.96051 8.27093 5.96051C8.32738 5.96051 8.38384 5.93229 8.41206 5.96051C8.46851 6.01696 8.46851 6.07342 8.44029 6.10164C8.41206 6.24277 6.63384 7.87987 6.52093 7.99277C6.12577 8.38793 5.67416 8.64196 6.3798 9.09358C6.97255 9.48874 7.31126 9.74277 7.93222 10.1379C8.32738 10.392 8.63787 10.7024 9.03303 10.6742C9.23061 10.646 9.42819 10.4766 9.51287 9.94035C9.7669 8.72664 10.2185 6.01696 10.3032 4.91616Z"
+                            fill="white" />
+                    </svg>
+                    start the history
+                </a>
+                <button class="header-bars">
+                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.77799C0 7.16434 0.497461 6.66688 1.11111 6.66688H18.8889C19.5025 6.66688 20 7.16434 20 7.77799C20 8.39164 19.5025 8.8891 18.8889 8.8891H1.11111C0.497461 8.8891 0 8.39164 0 7.77799Z" fill="white" fill-opacity="0.6"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14.4447C0 13.831 0.497461 13.3335 1.11111 13.3335H18.8889C19.5025 13.3335 20 13.831 20 14.4447C20 15.0583 19.5025 15.5558 18.8889 15.5558H1.11111C0.497461 15.5558 0 15.0583 0 14.4447Z" fill="white" fill-opacity="0.6"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.11132C0 0.497675 0.497461 0.000213623 1.11111 0.000213623H18.8889C19.5025 0.000213623 20 0.497675 20 1.11132C20 1.72497 19.5025 2.22244 18.8889 2.22244H1.11111C0.497461 2.22244 0 1.72497 0 1.11132Z" fill="white" fill-opacity="0.6"/>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0529 1.24335C15.4857 1.67615 15.4857 2.37786 15.0529 2.81066L9.56732 8.29626L15.0529 13.7819C15.4857 14.2147 15.4857 14.9164 15.0529 15.3492C14.6201 15.782 13.9184 15.782 13.4856 15.3492L8 9.86358L2.5144 15.3492C2.0816 15.782 1.37988 15.782 0.947082 15.3492C0.51428 14.9164 0.514281 14.2147 0.947082 13.7819L6.43268 8.29626L0.947082 2.81066C0.51428 2.37786 0.51428 1.67615 0.947082 1.24335C1.37988 0.810545 2.0816 0.810545 2.5144 1.24335L8 6.72895L13.4856 1.24335C13.9184 0.810545 14.6201 0.810545 15.0529 1.24335Z" fill="black" fill-opacity="0.5"/>
+                    </svg>
+                </button>
+                <ul class="header-navs">
+                    <li>
+                        <a href="#">Вступить</a>
+                    </li>
+                    <li>
+                        <a href="#">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#">Возникли вопросы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">Что такое клуб</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <section class="resident">
+            <div class="container">
+                <div class="resident_wrapper">
+                    <div class="resident_block">
+                        <div class="resident_name">
+                            Стань <br> резидентом <br> клуба
+                        </div>
+                        <div class="resident_description">
+                            ваш первый шаг <br> к <span>управлению рынком</span>
+                        </div>
+                        <p>
+                            Ежедневные сделки, аналитика, мои персональные книги, полноценное обучение торговле, поддержка, торговые боты и многое другое
+                        </p>
+                        <a href="#tariffs" class="white_btn">Войти в команду</a>
+                    </div>
+
+                    <div class="resident_photo">
+                        <img src="assets/images/resident_photo.png" alt="">
+                    </div>
+                </div>
+
+                <div class="resident_trade">
+                    <div class="resident_trade-left">
+                        <h2>Торговать можно на <span>любом рынке</span>, даже если он летит вниз. Как?</h2>
+                        <p>Нужно четко следовать конкретным стратегиям Посмотрите на мой портфель, это результат за
+                            декабрь</p>
+                    </div>
+                    <div class="resident_trade-phone">
+                        <img src="assets/images/Phone.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="personally">
+            <div class="container">
+                <div class="section_description">
+                    Потратьте <span>2 минуты</span>
+                </div>
+                <h2 class="section_title">
+                    Я вам лично обо <br> всем расскажу
+                </h2>
+                <div class="personally_video">
+                    <div class="vid">
+                        <script src="https://fast.wistia.com/player.js" async></script>
+                    <script src="https://fast.wistia.com/embed/nrn6bi62z8.js" async type="module"></script>
+                    <style>wistia-player[media-id='nrn6bi62z8']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/nrn6bi62z8/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }</style> 
+                    <wistia-player media-id="nrn6bi62z8" aspect="0.5625"></wistia-player>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="me">
+            <div class="container">
+                <h2 class="section_title">Кто я такой?</h2>
+                <div class="me_block">
+                    <img src="assets/images/books.png" alt="" class="books">
+                    <div class="about_me">
+                        <div class="name">
+                            <img src="assets/images/anton_logo.png" alt="">
+                            Антон <br> Смирнов
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="assets/images/arrow.svg" alt="">
+                                Автор одного из крупнейших каналов <br> в СНГ по инвестициям на 191 000 человек
+                            </li>
+                            <li>
+                                <img src="assets/images/arrow.svg" alt="">
+                                Ведущий закрытого клуба на 2 000 человек
+                            </li>
+                            <li>
+                                <img src="assets/images/arrow.svg" alt="">
+                                Торгую с 2017 года
+                            </li>
+                            <li>
+                                <img src="assets/images/arrow.svg" alt="">
+                                Наработал капитал на бирже 46 млн. и успешно <br> им управляю не первый год
+                            </li>
+                            <li>
+                                <img src="assets/images/arrow.svg" alt="">
+                                Провел обучение для 13 000 человек <br> за последние 3 года
+                            </li>
+                            <li>
+                                <img src="assets/images/arrow.svg" alt="">
+                                Написал три книги
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="assets/images/coin_1.svg" alt="" class="coin_1">
+                    <img src="assets/images/coin_2.svg" alt="" class="coin_2">
+                </div>
+            </div>
+        </section>
+
+        <section class="for">
+            <div class="container">
+                <h2 class="section_title">Кому стоит стать резидентом</h2>
+                <div class="swiper for-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="for-card">
+                                <div>
+                                    <h3>Наш клуб для вас</h3>
+                                    <ul>
+                                        <li>
+                                            <img src="./assets/images/plus-icon.svg" alt="">
+                                            <p>Если вы <b>новичок</b>, который хочет получить первую доходность и выработать свою стратегию</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/images/plus-icon.svg" alt="">
+                                            <p>Если вы <b>инвестор</b>, который хочет долго и уверенно увеличивать свой капитал и получать конкретные сделки</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/images/plus-icon.svg" alt="">
+                                            <p>Если вы <b>трейдер</b>, который хочет получить доступ к эксклюзивным стратегиям и сделкам</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/images/plus-icon.svg" alt="">
+                                            <p>Если вы <b>хотите узнать о новых трендах</b> (криптовалюта, недвижимость)</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/images/plus-icon.svg" alt="">
+                                            <p>Если хотите <b>оптимизировать свой портфель</b> и получить мои комментарии</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="white_btn">Войти в клуб</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="for-card for-card__2">
+                                <div>
+                                    <h3>Наш клуб <span>не</span> для вас</h3>
+                                    <ul>
+                                        <li>
+                                            <img src="./assets/images/minus-icon.svg" alt="">
+                                            <p>Если вы <b>ищете кнопку «бабло»</b> и считаете, что рынок — это казино</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/images/minus-icon.svg" alt="">
+                                            <p>Если вы <b>не хотите брать ответственность за свои финансы</b> и научиться правильно их распределять</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/images/minus-icon.svg" alt="">
+                                            <p>Если вы не <b>хотите выработать собственную инвестиционную стратегию</b>, продолжая ждать, когда вам скажут «Покупай это здесь, а продавай здесь»</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn white_btn">Клуб не для вас</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="receive">
+            <div class="container">
+                <h2 class="section_title">Каждый резидент получит:</h2>
+                <div class="receive_cards">
+                    <div class="receive_card">
+                        <div class="receive_number">
+                            01
+                        </div>
+                        <p>
+                            Новейшие торговые пособия прямо в руки навсегда
+                        </p>
+                    </div>
+                    <div class="receive_card">
+                        <div class="receive_number">
+                            02
+                        </div>
+                        <p>
+                            Чёткое понимание, как действовать в любой момент на рынке
+                        </p>
+                    </div>
+                    <div class="receive_card">
+                        <div class="receive_number">
+                            03
+                        </div>
+                        <p>
+                            Личную поддержку от меня и от нашей команды 24/7
+                        </p>
+                    </div>
+                    <div class="receive_card">
+                        <div class="receive_number">
+                            04
+                        </div>
+                        <p>
+                            Обширный ряд дополнительных торговых ботов и активный чат с резидентами клуба
+                        </p>
+                    </div>
+                    <div class="receive_card">
+                        <div class="receive_number">
+                            05
+                        </div>
+                        <p>
+                            Математические правила для грамотного трейдинга, разобранные на видео и в книге
+                        </p>
+                    </div>
+                    <div class="receive_card">
+                        <div class="receive_number">
+                            06
+                        </div>
+                        <p>
+                            65 готовых видео уроков, которые регулярно дополняются
+                        </p>
+                    </div>
+                    <div class="receive_card">
+                        <div class="receive_number">
+                            07
+                        </div>
+                        <p>
+                            Доступ в торговый клуб
+                        </p>
+                    </div>
+                    <div class="receive_card">
+                        <div class="receive_number">
+                            08
+                        </div>
+                        <p>
+                            Отдельный канал <br> по недвижимости и крипте
+                        </p>
+                    </div>
+                    <div class="receive_card infinity">
+                        <div class="receive_number">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="81" height="46" viewBox="0 0 81 46"
+                                fill="none">
+                                <g filter="url(#filter0_d_26_1470)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.9684 11.5C16.6346 11.5 11.5 16.6346 11.5 22.9684C11.5 29.3022 16.6346 34.4368 22.9684 34.4368C23.7968 34.4368 24.4684 35.1084 24.4684 35.9368C24.4684 36.7653 23.7968 37.4368 22.9684 37.4368C14.9778 37.4368 8.5 30.959 8.5 22.9684C8.5 14.9778 14.9778 8.5 22.9684 8.5C26.7262 8.5 30.0785 10.3787 33.0908 12.9029C36.0866 15.4134 38.9408 18.7322 41.6929 21.9323L41.7427 21.9904C44.5517 25.2566 47.2576 28.397 50.047 30.7345C52.8381 33.0734 55.5161 34.4368 58.2425 34.4368C64.5763 34.4368 69.7109 29.3022 69.7109 22.9684C69.7109 16.6346 64.5763 11.5 58.2425 11.5C57.4141 11.5 56.7425 10.8284 56.7425 10C56.7425 9.17157 57.4141 8.5 58.2425 8.5C66.2331 8.5 72.7109 14.9778 72.7109 22.9684C72.7109 30.959 66.2331 37.4368 58.2425 37.4368C54.4847 37.4368 51.1324 35.5581 48.1201 33.0339C45.1243 30.5234 42.2701 27.2046 39.518 24.0044L39.4682 23.9465C36.6592 20.6802 33.9534 17.5398 31.1639 15.2023C28.3728 12.8634 25.6948 11.5 22.9684 11.5Z"
+                                        fill="white" />
+                                </g>
+                                <g filter="url(#filter1_d_26_1470)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M48.1205 12.9029C51.1327 10.3787 54.485 8.5 58.2429 8.5C59.0713 8.5 59.7429 9.17157 59.7429 10C59.7429 10.8284 59.0713 11.5 58.2429 11.5C55.5164 11.5 52.8384 12.8634 50.0473 15.2023C47.2579 17.5398 44.552 20.6802 41.7431 23.9465L41.6932 24.0045C38.9411 27.2046 36.087 30.5234 33.0911 33.0339C30.0789 35.5581 26.7266 37.4368 22.9688 37.4368C22.1403 37.4368 21.4688 36.7653 21.4688 35.9368C21.4688 35.1084 22.1403 34.4368 22.9688 34.4368C25.6952 34.4368 28.3732 33.0734 31.1643 30.7345C33.9537 28.397 36.6596 25.2566 39.4685 21.9904L39.5184 21.9324C42.2705 18.7322 45.1246 15.4134 48.1205 12.9029Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_26_1470" x="0.8" y="0.8" width="79.6109" height="44.3369"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset />
+                                        <feGaussianBlur stdDeviation="3.85" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.35 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_26_1470" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_26_1470"
+                                            result="shape" />
+                                    </filter>
+                                    <filter id="filter1_d_26_1470" x="13.7688" y="0.8" width="53.674" height="44.3369"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset />
+                                        <feGaussianBlur stdDeviation="3.85" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.35 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_26_1470" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_26_1470"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </div>
+                        <p>
+                            Обучение и практику одновременно и <strong>многое другое</strong>
+                        </p>
+                    </div>
+                </div>
+                <a href="#tariffs" class="white_btn">Войти в команду</a>
+            </div>
+        </section>
+
+        <section class="benefit">
+            <div class="container">
+                <h2 class="section_title">В чём выгода моего <br> подхода <span>в сравнении</span></h2>
+                <img src="assets/images/benefit_coin_1.png" alt="" class="benefit_coin-1">
+                <img src="assets/images/benefit_coin_2.png" alt="" class="benefit_coin-2">
+                <div class="benefit_block">
+                    <div class="benefit_row">
+                        <div class="benefit_item">
+                            <div class="benefit_name">
+                                Депозиты
+                            </div>
+                            <ul class="benefit_pluses">
+                                <li>
+                                    <img src="assets/images/plus_benefit.svg" alt="">
+                                    Вклады – надежный <br> инструмент
+                                </li>
+                                <li>
+                                    <img src="assets/images/plus_benefit.svg" alt="">
+                                    Есть страхование 1.4 млн.
+                                </li>
+                            </ul>
+                            <ul class="benefit_minuses">
+                                <li>
+                                    <img src="assets/images/minus_benefit.svg" alt="">
+                                    Деньги заморожены до окончания срока вклада, если забрать раньше, накопленные
+                                    проценты пропадут
+                                </li>
+                                <li>
+                                    <img src="assets/images/minus_benefit.svg" alt="">
+                                    Нестабильный высокий процент, год назад вклады давали 10%
+                                </li>
+                                <li>
+                                    <img src="assets/images/minus_benefit.svg" alt="">
+                                    Сложный процент только <br> на невыгодных тарифах
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="benefit_item black_one">
+                            <div class="benefit_name">
+                                Торговля
+                            </div>
+                            <ul class="benefit_pluses">
+                                <li>
+                                    <img src="assets/images/plus_benefit.svg" alt="">
+                                    Можно получить деньги день в день
+                                </li>
+                                <li>
+                                    <img src="assets/images/plus_benefit.svg" alt="">
+                                    Доходность может <br> составлять от 20 <br> до 40% в год с большой <br> надежностью,
+                                    а 100% с <br>
+                                    рисками
+                                </li>
+                                <li>
+                                    <img src="assets/images/plus_benefit.svg" alt="">
+                                    Можно покупать фонды недвижимости, быстрой ликвидности, заменяя вклады и
+                                    недвижимость
+                                </li>
+                                <li>
+                                    <img src="assets/images/plus_benefit.svg" alt="">
+                                    ОФЗ – надежная часть инвестиций, как и вклады
+                                </li>
+                            </ul>
+                            <ul class="benefit_minuses">
+                                <li>
+                                    <img src="assets/images/minus_benefit.svg" alt="">
+                                    В спекуляцию торгуют лишь с четко выверенной стратегией
+                                </li>
+                                <li>
+                                    <img src="assets/images/minus_benefit.svg" alt="">
+                                    Вы сами ответственны за свои действия
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="benefit_item">
+                            <div class="benefit_name">
+                                Недвижимость
+                            </div>
+                            <ul class="benefit_pluses">
+                                <li>
+                                    <img src="assets/images/plus_benefit.svg" alt="">
+                                    Надежный вид инвестиций
+                                </li>
+                                <li>
+                                    <img src="assets/images/plus_benefit.svg" alt="">
+                                    Малые риски при работе <br> с бетоном и наличие спроса
+                                </li>
+                            </ul>
+                            <ul class="benefit_minuses">
+                                <li>
+                                    <img src="assets/images/minus_benefit.svg" alt="">
+                                    Сложно быстро получить деньги, если понадобятся
+                                </li>
+                                <li>
+                                    <img src="assets/images/minus_benefit.svg" alt="">
+                                    Маленькая доходность от 3 до 10% годовых
+                                </li>
+                                <li>
+                                    <img src="assets/images/minus_benefit.svg" alt="">
+                                    Много сложностей со сдачей в аренду и ремонтом
+                                </li>
+                                <li>
+                                    <img src="assets/images/minus_benefit.svg" alt="">
+                                    Высокие цены за метр
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="benefit-pagination"></div>
+                </div>
+                <a href="#tariffs" class="white_btn">Войти в команду</a>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h2 class="section_title">Отзывы</h2>
+                <div class="reviews_block">
+                    <div class="swiper reviews_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="screenshot"><img src="assets/images/screenshot1.png" alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="screenshot"><img src="assets/images/screenshot2.png" alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="screenshot"><img src="assets/images/screenshot3.png" alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="screenshot"><img src="assets/images/screenshot4.png" alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="screenshot"><img src="assets/images/screenshot5.png" alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="screenshot"><img src="assets/images/screenshot6.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next reviews-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92" fill="none">
+                            <g filter="url(#filter0_d_26_1682)">
+                                <g filter="url(#filter1_d_26_1682)">
+                                    <circle cx="46" cy="42" r="24" fill="#015EFF" />
+                                </g>
+                                <path d="M43 51L52.5 41.5L43 32" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_26_1682" x="18" y="18" width="56" height="56"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="4" />
+                                    <feGaussianBlur stdDeviation="2" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.00392157 0 0 0 0 0.368627 0 0 0 0 1 0 0 0 0.4 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_26_1682" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_26_1682"
+                                        result="shape" />
+                                </filter>
+                                <filter id="filter1_d_26_1682" x="0.9" y="0.9" width="90.2" height="90.2"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="4" />
+                                    <feGaussianBlur stdDeviation="10.55" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.00392157 0 0 0 0 0.368627 0 0 0 0 1 0 0 0 0.4 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_26_1682" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_26_1682"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev reviews-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92" fill="none">
+                            <g filter="url(#filter0_d_26_1200)">
+                                <g filter="url(#filter1_d_26_1200)">
+                                    <circle cx="24" cy="24" r="24" transform="matrix(-1 0 0 1 70 18)" fill="#015EFF" />
+                                </g>
+                                <path d="M49 51L39.5 41.5L49 32" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_26_1200" x="18" y="18" width="56" height="56"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="4" />
+                                    <feGaussianBlur stdDeviation="2" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.00392157 0 0 0 0 0.368627 0 0 0 0 1 0 0 0 0.4 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_26_1200" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_26_1200"
+                                        result="shape" />
+                                </filter>
+                                <filter id="filter1_d_26_1200" x="0.9" y="0.9" width="90.2" height="90.2"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="4" />
+                                    <feGaussianBlur stdDeviation="10.55" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.00392157 0 0 0 0 0.368627 0 0 0 0 1 0 0 0 0.4 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_26_1200" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_26_1200"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="swiper-pagination reviews_pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tariffs" id="tariffs">
+            <div class="container">
+                <h2 class="section_title">Выберите <span>свой вариант</span> <br> резидентства</h2>
+                <div class="tariffs_row">
+                    <div class="tariff_item">
+                        <h4 class="tariff_name">Резидент Lite</h4>
+                        <div class="tariff_price">
+                            19 990
+                            <s>37 000</s>
+                        </div>
+                        <div class="tariff_loan">
+                            ❗️1665р в месяц
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                Первое в СНГ обучение по торговле внутри цикла
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                10 новейших видео уроков по актуальным стратегиям
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                2 книги, 1 задачник <br> и сертификат
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                1 Еженедельный прямой эфир по рынку
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                Отдельный канал <br>по инвестициям в <br> недвижимость со мной и приглашенным
+                                профессионалом
+                            </li>
+                        </ul>
+                        <ul class="tariffs_minuses">
+                            <li>
+                                <img src="assets/images/tariff_minus.svg" alt="">
+                                Отдельная ветка по криптовалюте
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_minus.svg" alt="">
+                                Регулярное обновление моего личного портфеля с комментариями
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_minus.svg" alt="">
+                                Доступ в клуб с моими торговыми идеями, аналитикой и общением на 6 месяцев
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_minus.svg" alt="">
+                                55 видео уроков по трейдингу внутри клуба
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_minus.svg" alt="">
+                                Отдельный канал с юристом по налогам на фондовом рынке: как экономить, получать вычеты и
+                                многое другое
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_minus.svg" alt="">
+                                Персональный юрист по любым инвестиционным вопросам 
+на полгода
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_minus.svg" alt="">
+                                Персональный разбор вашего портфеля с моими комментариями и подсказками
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_minus.svg" alt="">
+                                Мой личный контакт по любому вашему вопросу
+                            </li>
+                        </ul>
+                        <a href="#" id="openModalLite" class="white_btn">Купить LITE</a>
+                    </div>
+                    <div class="tariff_item pro">
+                        <h4 class="tariff_name">Резидент PRO</h4>
+                        <div class="tariff_price">
+                            <span class="current_price">29 990</span>
+                            <s>78 000</s>
+                            <span class="profitable">выгодно</span>
+                        </div>
+                        <div class="tariff_loan">
+                            ❗️2499р в месяц
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                Первое в СНГ обучение по торговле внутри цикла
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                10 новейших видео уроков по актуальным стратегиям
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                2 книги, 1 задачник <br> и сертификат
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                1 Еженедельный прямой эфир по рынку
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                Отдельный канал <br>по инвестициям в <br> недвижимость со мной и приглашенным
+                                профессионалом
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                Отдельная ветка по криптовалюте
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                Регулярное обновление моего личного портфеля с комментариями
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                Доступ в клуб с моими торговыми идеями, аналитикой и общением на 6 месяцев
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                55 видео уроков по трейдингу внутри клуба
+                            </li>
+                            <li class="natural">
+                                Отдельный канал с юристом по налогам на фондовом рынке: как экономить, получать вычеты и
+                                многое другое
+                            </li>
+                        </ul>
+                        <ul class="tariffs_minuses">
+                            <li>
+                                <img src="assets/images/tariff_minus.svg" alt="">
+                                Персональный юрист по любым инвестиционным вопросам 
+на полгода
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_minus.svg" alt="">
+                                Персональный разбор вашего портфеля с моими комментариями и подсказками
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_minus.svg" alt="">
+                                Мой личный контакт по любому вашему вопросу
+                            </li>
+                        </ul>
+                        <a href="#" id="openModalPro" class="white_btn">Купить PRO</a>
+                    </div>
+                    <div class="tariff_item">
+                        <h4 class="tariff_name">Резидент Premium</h4>
+                        <div class="tariff_price">
+                            49 990
+                            <s>108 000</s>
+                        </div>
+                        <div class="tariff_loan">
+                            ❗️4165р в месяц
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                Первое в СНГ обучение по торговле внутри цикла
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                10 новейших видео уроков по актуальным стратегиям
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                2 книги, 1 задачник <br> и сертификат
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                1 Еженедельный прямой эфир по рынку
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                Отдельный канал <br>по инвестициям в <br> недвижимость со мной и приглашенным
+                                профессионалом
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                Отдельная ветка по криптовалюте
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                Регулярное обновление моего личного портфеля с комментариями
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                Доступ в клуб с моими торговыми идеями, аналитикой и общением на 6 месяцев
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                55 видео уроков по трейдингу внутри клуба
+                            </li>
+                            <li class="natural">
+                                Отдельный канал с юристом по налогам на фондовом рынке: как экономить, получать вычеты и
+                                многое другое
+                            </li>
+                            <li class="natural">
+                                Персональный юрист по любым инвестиционным вопросам на полгода
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                Персональный разбор вашего портфеля с моими комментариями и подсказками
+                            </li>
+                            <li>
+                                <img src="assets/images/tariff_check.svg" alt="">
+                                Мой личный контакт по любому вашему вопросу
+                            </li>
+
+                        </ul>
+                        <a href="#" class="white_btn" id="openModalPremium">Купить PREMIUM</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer_row">
+                    <div class="for_question">
+                        По всем вопросам
+                        <a href="https://t.me/startheinvesting">@startheinvesting</a>
+                    </div>
+                    <div class="footer_links">
+                        <a href="policy.pdf">Политика конфиденциальности</a>
+                        <a href="agreement.pdf">Пользовательское соглашение</a>
+                    </div>
+                </div>
+                <div class="footer_row">
+                    <a href="#" class="open_telegram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                            <path
+                                d="M7.08545 0.145996C10.9242 0.145996 14.0855 3.30729 14.0855 7.146C14.0855 11.0129 10.9242 14.146 7.08545 14.146C3.21851 14.146 0.0854492 11.0129 0.0854492 7.146C0.0854492 3.30729 3.21851 0.145996 7.08545 0.145996ZM10.3032 4.91616C10.3314 4.83148 10.3314 4.7468 10.3032 4.6339C10.3032 4.57745 10.2467 4.49277 10.2185 4.46454C10.1338 4.37987 9.99271 4.37987 9.93626 4.37987C9.68222 4.37987 9.25884 4.521 7.31126 5.33954C6.63384 5.6218 5.279 6.18632 3.24674 7.08954C2.90803 7.23067 2.73868 7.34358 2.71045 7.48471C2.68222 7.71051 3.04916 7.79519 3.47255 7.93632C3.83948 8.04922 4.31932 8.19035 4.57335 8.19035C4.79916 8.19035 5.05319 8.10567 5.33545 7.90809C7.22658 6.60971 8.21448 5.96051 8.27093 5.96051C8.32738 5.96051 8.38384 5.93229 8.41206 5.96051C8.46851 6.01696 8.46851 6.07342 8.44029 6.10164C8.41206 6.24277 6.63384 7.87987 6.52093 7.99277C6.12577 8.38793 5.67416 8.64196 6.3798 9.09358C6.97255 9.48874 7.31126 9.74277 7.93222 10.1379C8.32738 10.392 8.63787 10.7024 9.03303 10.6742C9.23061 10.646 9.42819 10.4766 9.51287 9.94035C9.7669 8.72664 10.2185 6.01696 10.3032 4.91616Z"
+                                fill="white" />
+                        </svg>
+                        start the history
+                    </a>
+                    <div class="about_company">
+                        ИП Смирнов Антон Михайлович <br>
+                        ИНН 760701245662 <br>
+                        ОГРНИП 321762700012011
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <div class="modal-overlay" id="modalOverlayLite">
+        <div class="modal">
+            <h2>Покупка тарифа <br>Резидент Lite</h2>
+            <form class="modal_form">
+                <div class="inputs">
+                    <input type="text" name="name" id="" placeholder="Введите ваше имя" required>
+                    <input type="email" name="email" id="" placeholder="Введите ваш электронный адрес" required>
+                    <!-- <input type="text" name="phone" id="" placeholder="Введите ваш телефон" required> -->
+                    <input hidden type="text" name="price" value="19990">
+                </div>
+                <div class="checkboxes">
+                    <label class="check_item">
+                        <input type="checkbox" checked required name="" id="">
+                        <span></span>
+                        Я согласен с договором-офертой
+                    </label>
+                    <!-- <label class="check_item">
+                        <input type="checkbox" name="" id="">
+                        <span></span>
+                        Я согласен с Положением (политикой) в области обработки персональных данных
+                    </label>
+                    <label class="check_item">
+                        <input type="checkbox" name="" id="">
+                        <span></span>
+                        <div> Я даю согласие на обработку персональных данных</div>
+                    </label> -->
+                </div>
+                <button class="modal_button">Купить</button>
+            </form>
+            <button class="close-btn" id="closeModalLite">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <path d="M26.7646 8.9209L8.92178 26.7637" stroke="white" stroke-width="2" />
+                    <path d="M26.7646 26.7646L8.92178 8.92188" stroke="white" stroke-width="2" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modalOverlayPro">
+        <div class="modal">
+            <h2>Покупка тарифа <br>Резидент PRO</h2>
+            <form class="modal_form">
+                <div class="inputs">
+                    <input type="text" name="name" id="" placeholder="Введите ваше имя" required>
+                    <input type="email" name="email" id="" placeholder="Введите ваш электронный адрес" required>
+                    <!-- <input type="text" name="phone" id="" placeholder="Введите ваш телефон" required> -->
+                    <input hidden type="text" name="price" value="29990">
+                </div>
+                <div class="checkboxes">
+                    <label class="check_item">
+                        <input type="checkbox" checked required name="" id="">
+                        <span></span>
+                        Я согласен с договором-офертой
+                    </label>
+                    <!-- <label class="check_item">
+                        <input type="checkbox" name="" id="">
+                        <span></span>
+                        Я согласен с Положением (политикой) в области обработки персональных данных
+                    </label>
+                    <label class="check_item">
+                        <input type="checkbox" name="" id="">
+                        <span></span>
+                        <div> Я даю согласие на обработку персональных данных</div>
+                    </label> -->
+                </div>
+                <button class="modal_button">Купить</button>
+            </form>
+            <button class="close-btn" id="closeModalPro">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <path d="M26.7646 8.9209L8.92178 26.7637" stroke="white" stroke-width="2" />
+                    <path d="M26.7646 26.7646L8.92178 8.92188" stroke="white" stroke-width="2" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modalOverlayPremium">
+        <div class="modal">
+            <h2>Покупка тарифа <br>Резидент Premium</h2>
+            <form class="modal_form">
+                <div class="inputs">
+                    <input type="text" name="name" id="" placeholder="Введите ваше имя" required>
+                    <input type="email" name="email" id="" placeholder="Введите ваш электронный адрес" required>
+                    <!-- <input type="text" name="phone" id="" placeholder="Введите ваш телефон" required> -->
+                    <input hidden type="text" name="price" value="49990">
+                </div>
+                <div class="checkboxes">
+                    <label class="check_item">
+                        <input type="checkbox" checked required name="" id="">
+                        <span></span>
+                        Я согласен с договором-офертой
+                    </label>
+                    <!-- <label class="check_item">
+                        <input type="checkbox" name="" id="">
+                        <span></span>
+                        Я согласен с Положением (политикой) в области обработки персональных данных
+                    </label>
+                    <label class="check_item">
+                        <input type="checkbox" name="" id="">
+                        <span></span>
+                        <div> Я даю согласие на обработку персональных данных</div>
+                    </label> -->
+                </div>
+                <button class="modal_button">Купить</button>
+            </form>
+            <button class="close-btn" id="closeModalPremium">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <path d="M26.7646 8.9209L8.92178 26.7637" stroke="white" stroke-width="2" />
+                    <path d="M26.7646 26.7646L8.92178 8.92188" stroke="white" stroke-width="2" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- swiper -->
+    <script src="assets/libs/swiper.js"></script>
+    <script src="assets/libs/swiper.min.js"></script>
+    <!-- script -->
+    <script src="assets/main.js?v=0.04"></script>
+</body>
+
+</html>
