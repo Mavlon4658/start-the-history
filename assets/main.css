@@ -1625,9 +1625,10 @@ footer {
     }
 
     .resident {
-        padding-top: 26px;
-        background-image: url(images/resident_mb.png);
-        background-position: center;
+        padding-top: 25vw;
+        background-image: url('./images/resident_mb.png');
+        background-position: center top;
+        background-size: cover;
     }
 
     .open_telegram {
@@ -1701,7 +1702,7 @@ footer {
     }
 
     .resident_block {
-        margin-top: 32px;
+        margin-top: 0;
     }
 
     .resident_name {
@@ -1720,7 +1721,7 @@ footer {
     .resident_block p {
         margin: 16px 0;
         max-width: 100%;
-        margin-top: 320px;
+        margin-top: 100.5vw;
     }
 
     .white_btn {
