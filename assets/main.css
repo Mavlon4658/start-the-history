@@ -522,8 +522,13 @@ body {
     background-position: center;
 }
 
+.for .section_title br {
+    display: none;
+}
+
 .for-swiper {
     margin-top: 40px;
+    margin-right: 16px;
 }
 
 .for-swiper .swiper-wrapper {
@@ -532,6 +537,18 @@ body {
 
 .for-swiper .swiper-slide {
     height: auto;
+}
+
+.for-swiper__pagination {
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: auto;
+    bottom: auto;
+    margin-top: 8px;
+    gap: 4px;
 }
 
 .for-card {
@@ -1827,23 +1844,66 @@ footer {
         padding: 64px 0;
     }
 
+    .for .section_title br {
+        display: block;
+    }
+
+    .for .container {
+        padding: 0 5vw;
+    }
+
     .for-swiper {
         overflow: visible;
+        margin-top: 4.5vw;
+        margin-right: auto;
+        margin-left: 0;
+        max-width: 85.3vw;
+    }
+
+    .for-swiper__pagination {
+        display: flex;
     }
 
     .for-card {
-        padding: 24px 16px;
+        padding: 7.3vw 5vw;
         border-radius: 16px;
+        gap: 5vw;
     }
 
     .for-card h3 {
-        font-size: 18px;
-        margin-bottom: 16px;
+        font-size: 5.68vw;
+        margin-bottom: 5vw;
+    }
+
+    .for-card ul {
+        gap: 4.6vw;
+    }
+
+    .for-card li {
+        gap: 3vw;
+    }
+
+    .for-card li p {
+        font-size: 3.76vw;
     }
 
     .for_block {
         margin-top: 16px;
         flex-wrap: wrap;
+    }
+
+    .for .for-card .white_btn {
+        width: 57vw;
+        height: 12vw;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .for-card li img {
+        width: 3.5vw;
     }
 
     .investor img {
@@ -1887,7 +1947,7 @@ footer {
         width: 100%;
         flex-direction: row;
         align-items: center;
-        gap: 20px;
+        gap: 0;
         min-height: 77px;
         justify-content: start;
     }
@@ -1895,6 +1955,8 @@ footer {
     .receive_card .receive_number {
         display: flex;
         align-items: center;
+        width: 19vw;
+        flex-shrink: 0;
     }
 
     .receive .white_btn {
@@ -2268,16 +2330,31 @@ footer {
     }
 
     .faq-accordion__wrap {
-        padding: 24px 16px;
+        padding: 7vw 5vw;
         border-radius: 10px;
+        gap: 6.7vw;
+    }
+
+    .faq-accordion__btn {
+        align-items: flex-start;
     }
 
     .faq-accordion__btn h4 {
-        font-size: 16px;
+        font-size: 5.01vw;
+    }
+
+    .faq-accordion__btn svg {
+        width: 4.6vw;
+        flex-shrink: 0;
     }
 
     .faq-accordion__body p {
-        padding-top: 16px;
+        padding-top: 6vw;
+        font-size: 3.73vw;
+    }
+
+    .swiper {
+        overflow: visible;
     }
 }
 
@@ -2614,9 +2691,102 @@ footer {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
+    .container {
+        padding: 0 7.7vw;
+        max-width: 100%;
+    }
+
+    .tariffs-card__1 {
+        padding: 3.5vw 5vw;
+    }
+
+    .tariffs-card__1 ul {
+        gap: 5vw;
+    }
+
+    .tariffs-card__1 li {
+        gap: 3.2vw;
+    }
+
+    .tariffs-card__1 li img {
+        width: 3.2vw;
+    }
+
+    .tariffs-card__1 li p {
+        font-size: 3.44vw;
+        max-width: 100%;
+    }
+
+    .tariffs-card__1 li p span {
+        font-size: 2.39vw;
+    }
+
+    .tariffs-card__1 li.text-blue {
+        font-size: 3.4vw;
+    }
+
+    .tariffs-card__1 h3 {
+        margin-bottom: 5vw;
+        font-size: 5.1vw;
+    }
+
     .tariffs-card__2 .white_btn,
     .tariffs-card__3 .white_btn {
         width: 100%;
+    }
+
+    .tariffs-card__2 {
+        padding: 8vw 5vw;
+    }
+
+    .tariffs-card__2 h4 {
+        font-size: 5vw;
+    }
+
+    .tariffs-card__2 h3 {
+        font-size: 13vw;
+        letter-spacing: 0.5vw;
+        line-height: 15vw;
+        margin-bottom: 6vw;
+    }
+
+    .tariffs-card__2 p {
+        font-size: 2.54vw;
+    }
+
+    .tariffs-card__3 {
+        padding: 8vw 5vw;
+    }
+
+    .tariffs-card__3 h4 {
+        font-size: 5vw;
+        margin-bottom: 3.6vw;
+    }
+
+    .tariffs-card__3 .price {
+        gap: 2vw;
+        margin-bottom: 1.6vw;
+    }
+
+    .tariffs-card__3 .price h3 {
+        font-size: 14vw;
+    }
+
+    .tariffs-card__3 .price-discount {
+        font-size: 3.2vw;
+    }
+
+    .tariffs-card__3 h5 {
+        font-size: 3.7vw;
+        margin-bottom: 5vw;
+    }
+
+    .tariffs-card__3 .white_btn {
+        margin-bottom: 2vw;
+    }
+
+    .tariffs-card__3 p {
+        font-size: 2.5vw;
     }
 }
 /* Tariffs end */

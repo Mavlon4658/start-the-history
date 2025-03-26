@@ -72,6 +72,10 @@ window.addEventListener('DOMContentLoaded', () => {
                 slidesPerView: 2,
                 spaceBetween: 18,
             }
+        },
+        pagination: {
+            el: '.for-swiper__pagination',
+            clickable: true,
         }
     })
 
